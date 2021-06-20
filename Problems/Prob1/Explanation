@@ -1,0 +1,16 @@
+Question:
+https://leetcode.com/problems/two-sum/description/
+
+Approach:
+Traverse the given array and store the compliment(the other part required to sum up to the given target sum) of each element in a
+HashMap as a key for that element.While we traverse through the given array keep on checking if the element has its key already in the
+HashMap before updating its key.If the key exists, it means the element has its compliment in the Array and then we can print the
+currently checked element along with the value of its compliment key present in HashMap.
+
+
+Complexity Analysis:
+Time complexity for traversing each element of the array: O(n)
+Time complexity for adding and checking each element's compliment: O(1)
+Therefore, total time complexity is O(n).
+
+Space Complexity is O(n) as we will be creating another HashMap to store the elements along with its compliment.
